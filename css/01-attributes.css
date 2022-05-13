@@ -1,0 +1,180 @@
+:root {
+  --primary-text-color: #2a2a2a;
+  --secondary-text-color: #ffff;
+  --primary-bg-color: #2196f3;
+  --hover-bg-color: #1976d2;
+}
+
+/* Обязвтельные поля (required) */
+
+/* Мой пример */
+
+/* .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  font-size: 16px;
+  font-family: inherit;
+  color: #757575;
+  margin-bottom: 3px;
+}
+
+.form-field input {
+  padding: 8px;
+  font-family: inherit;
+}
+
+.form button {
+  display: inline-flex;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #2196f3;
+  border-radius: 4px;
+  font-family: inherit;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #1976d2;
+} */
+
+/* Пример с конспекта */
+
+/* label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: #757575;
+}
+
+input {
+  padding: 8px;
+  font-family: inherit;
+}
+
+button {
+  display: inline-flex;
+  padding: 10px 30px;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2196f3;
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #1976d2;
+} */
+
+/* Ограничение по длине */
+
+/* label {
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  font-size: 16px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  display: inline-flex;
+  padding: 10px 30px;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2196f3;
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #1976d2;
+} */
+
+/* Ограничение значения */
+
+/* label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  display: inline-flex;
+  padding: 10px 30px;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-bg-color);
+  border-color: transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--hover-bg-color);
+} */
+
+/* Регулярное выражение */
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-size: 16px;
+}
+
+input {
+  padding: 5px;
+  font-family: inherit;
+}
+
+button {
+  display: inline-flex;
+  padding: 10px 30px;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-bg-color);
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--hover-bg-color);
+}

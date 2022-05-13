@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Псевдоклассы состояния</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/02-pseudoclasses.css" />
+  </head>
+  <body>
+    <a href="./index.html">Назад на главную!</a>
+
+    <h1>Псевдоклассы состояния</h1>
+
+    <!-- :enabled и :disabled -->
+
+    <!-- <div class="form-field">
+      <button class="btn">Active button</button>
+      <button class="btn" disabled>Disabled button</button>
+    </div> -->
+
+    <!-- :checked -->
+
+    <!-- <form class="form">
+      <div role="group" class="form-group">
+        <b class="form-caption">what are your hobbies?</b>
+
+        <div class="form-field">
+          <input
+            type="checkbox"
+            class="form-input"
+            name="hobby"
+            value="sports"
+            id="sports"
+          />
+          <label for="sports" class="form-label">Sports</label>
+        </div>
+
+        <div class="form-field">
+          <input
+            type="checkbox"
+            class="form-input"
+            name="hobby"
+            value="music"
+            id="music"
+          />
+          <label for="music" class="form-label">Music</label>
+        </div>
+
+        <div class="form-field">
+          <input
+            type="checkbox"
+            class="form-input"
+            name="hobby"
+            value="books"
+            id="hobby"
+          />
+          <label for="hobby" class="form-label">Books</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- :in-range  и :out-of-range -->
+
+    <!-- <form class="form">
+      <div class="form-field">
+        <label for="amount-1" class="form-label"
+          >How many pizzas do you want to order?</label
+        >
+        <input
+          type="number"
+          class="form-input"
+          name="amount-1"
+          id="amount-1"
+          required
+          min="1"
+          max="10"
+          step="1"
+          value="0"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="amount-2" class="form-label"
+          >How many pizzas do you want to order?</label
+        >
+        <input
+          type="number"
+          class="form-input"
+          name="amount-2"
+          id="amount-2"
+          required
+          min="1"
+          max="10"
+          step="1"
+          value="3"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="amount-3" class="form-label"
+          >How many pizzas do you want to order?</label
+        >
+        <input
+          type="number"
+          class="form-input"
+          name="amount-3"
+          id="amount-3"
+          required
+          min="1"
+          max="10"
+          step="1"
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- :required и :optional -->
+    <!-- Мой пример -->
+
+    <!-- <form class="form">
+      <div class="form-field">
+        <label for="name" class="form-label">Username (optional)</label>
+        <input type="text" name="name" id="name" class="form-input" />
+      </div>
+
+      <div class="form-field">
+        <label for="email" class="form-label">Email (required)</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-input"
+          required
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- :vadid и :invalid -->
+
+    <!-- <form class="form">
+      <div class="form-field">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          name="name"
+          id="username"
+          required
+          class="form-input"
+          minlength="3"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="usermail" class="form-label">Username</label>
+        <input
+          type="email"
+          name="email"
+          id="usermail"
+          required
+          class="form-input"
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- :placeholder-shown -->
+
+    <!-- <form class="form">
+      <div class="form-field">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          name="name"
+          id="username"
+          class="form-input"
+          placeholder="Jacob Mercer"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="usermail" class="form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="usermail"
+          class="form-input"
+          placeholder="jacob@mail.com"
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- Композиция псевдоклассов -->
+    <!-- Мой пример -->
+
+    <!-- <form class="form">
+      <div class="form-field">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          name="name"
+          id="username"
+          class="form-input"
+          minlength="3"
+          required
+          placeholder="Jacob Mercer"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="usermail" class="form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="usermail"
+          class="form-input"
+          required
+          placeholder="jacob@mail.com"
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- :focus-within -->
+
+    <form class="form" autocomplete="off">
+      <div class="form-field">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          name="name"
+          id="username"
+          class="form-input"
+          minlength="3"
+          required
+          placeholder=" "
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="usermail" class="form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="usermail"
+          class="form-input"
+          required
+          placeholder=" "
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

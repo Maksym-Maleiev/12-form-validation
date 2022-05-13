@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Атрибуты валидации</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/01-attributes.css" />
+  </head>
+  <body>
+    <a href="./index.html">Назад на главную!</a>
+
+    <h1>Атрибуты валидации</h1>
+
+    <!-- Обязвтельные поля (required) -->
+
+    <!-- Мой пример -->
+    <!-- <form class="form">
+      <div class="form-field">
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="mail" required />
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- Пример из конспекта -->
+    <!-- <form>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="password" required />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- Ограничение по длине -->
+
+    <!-- <form>
+      <label>
+        Username
+        <input type="text" name="name" />
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="password" minlength="5" maxlength="12" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- Ограничение значения -->
+
+    <!-- <form>
+      <label>
+        How many pizzas do you want to order?
+        <input type="number" name="amount" min="1" max="10" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- Регулярное выражение -->
+
+    <form>
+      <label>
+        Username
+        <input
+          type="text"
+          name="user_name"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+
+      <label>
+        Password
+        <input
+          type="password"
+          name="user_password"
+          minlength="6"
+          maxlength="12"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+        />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
